@@ -1,0 +1,64 @@
+ body {
+    /* background: linear-gradient(45deg, #00d09c, #06a690, #00d09c, #06a690); */
+    background-color: #f1d38b;
+    background-size: 400% 400%;
+    color: #b05d1a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    animation: fadeIn 1s ease-in-out; /* Add fadeIn animation */
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s; /* Delay to start animation after page load */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 28px;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#uploadButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add button hover animation */
+}
+
+#uploadButton:hover {
+    background-color: #555;
+}
+
+#imageInput {
+    display: none;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
