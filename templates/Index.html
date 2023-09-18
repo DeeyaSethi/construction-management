@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Construction Streamline</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="hoverEffect.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="stylesheet" href="construction-management/static/css/style.css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hoverEffect.css') }}" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -16,7 +17,7 @@
     />
     <link
       rel="stylesheet"
-      href="./LoginAndRegister/LoginAndRegisterStyle.css"
+      href="{{ url_for('static', filename='css/LoginAndRegisterStyle.css') }}"
     />
   </head>
   <body id="IndexBody">
@@ -62,16 +63,16 @@
         <div class="Grow_middle_col2">
           <a class="inventoryManagement" href="#">
             <img
-              src="ImageIcon\logos construction\inventory management.png"
+              src="{{url_for('static', filename='images/ImageIcon/logos construction/inventory management.png') }}"
               width="69px"
               height="69px"
             />
             <h3>Inventory Management</h3>
           </a>
 
-          <a class="Stocks" href="SafetyOfWOrkersFinal/safety.html">
+          <a class="Stocks" href="SafetyOfWOrkersFinal/templateFiles/index_upload_and_show_data.html">
             <img
-              src="ImageIcon\logos construction\safety.png"
+              src="{{url_for('static', filename='images/ImageIcon\logos construction\safety.png') }}"
               width="69px"
               height="69px"
             />
@@ -80,7 +81,7 @@
         </div>
 
         <div class="Grow_middle_col2">
-          <a class="trackprogress" href="TrackProgress/progress.html">
+          <a class="trackprogress" href="./TrackProgress/progress.html">
             <img
               src="./ImageIcon/logos construction/track progress (2).png"
               width="69px"
@@ -224,7 +225,7 @@
         <div class="GrowwProduct_StocksDetails_Display">
           <div class="GrowwProduct_StocksDetails_Display_LeftPart">
             <img
-              src="/ImageNavigation/stocks.png"
+              src="./"
               width="562px"
               height="355px"
               class="ChangeImageAccordingNavigation"
@@ -588,10 +589,11 @@
       </div>
     </div>
 
-    <script src="Javascript.js"></script>
-    <script src="./LoginAndRegister/loginAndRegister.js"></script>
+    <!-- <script src="Javascript.js"></script> -->
+    <script src="{{ url_for('static', filename='js/Javascript.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/loginAndRegister.js') }}"></script>
     <script>
-      "./TrackProgress/trackProgress.js";
+      {{ url_for('static', filename='js/ProgressScript.js') }}
     </script>
   </body>
 </html>

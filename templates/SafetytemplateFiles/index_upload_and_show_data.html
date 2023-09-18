@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='staticFiles/styles.css' />
+  </head>
+  <body>
+    <h1>Upload and display image</h1>
+    <p>Show image</p>
+ 
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" id="myFile" name="uploaded-file" accept=".jpg">
+        <input type="submit" value="Submit">
+    </form>
+  <br>
+  <p style="color:green;">File uploaded successfully</p>
+  <form action="/show_image" target="_blank">
+        <input type="submit" value="Display Image" />
+    </form>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Worker Safety Check</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Worker Safety Check</h1>
+        <div class="upload-box">
+            <label for="imageInput" id="uploadButton">Upload Image</label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+</html> -->
