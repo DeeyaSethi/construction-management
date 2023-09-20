@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concern Submission</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #00D09C;
+        }
+
+        .disclaimer {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .select-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .submit-button {
+            background-color: #00D09C;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .file-input {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Concern Submission</h1>
+        <p class="disclaimer">Please ensure that the information provided is accurate and complete.</p>
+        <form id="reportForm">
+            <label class="form-label" for="category">Category:</label>
+            <select class="select-input" id="category" name="category" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="Misuse of Funds">Misuse of Funds</option>
+                <option value="Substandard Materials">Substandard Materials</option>
+                <option value="Worker Exploitation">Worker Exploitation</option>
+                <option value="Inventory Mismanagement">Inventory Mismanagement</option>
+                <option value="Safety Violations">Safety Violations</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label class="form-label" for="location">Location of the Project:</label>
+            <input class="form-input" type="text" id="location" name="location" required><br>
+
+            <label class="form-label" for="projectName">Name of the Project:</label>
+            <input class="form-input" type="text" id="projectName" name="projectName"><br>
+
+            <label class="form-label" for="role">Your Role:</label>
+            <select class="select-input" id="role" name="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="Citizen">Citizen</option>
+                <option value="Contractor">Contractor</option>
+                <option value="Worker">Worker</option>
+            </select><br>
+
+            <label class="form-label" for="name">Your Name:</label>
+            <input class="form-input" type="text" id="name" name="name" required><br>
+
+            <label class="form-label" for="email">Your Email:</label>
+            <input class="form-input" type="email" id="email" name="email" required><br>
+
+            <label class="form-label" for="details">Report Details:</label><br>
+            <textarea class="form-input" id="details" name="details" rows="4" cols="50" required></textarea><br>
+
+            <label class="form-label file-input" for="files">Attach Photos/Files (if applicable):</label><br>
+            <input class="form-input" type="file" id="files" name="files"><br>
+
+            <input class="submit-button" type="submit" value="Submit Report">
+        </form>
+        <div id="confirmation" style="display:none;">
+            Thank you for your report. Your input is valuable.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
