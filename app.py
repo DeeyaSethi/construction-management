@@ -1,13 +1,15 @@
 import secrets
-from flask import Flask, render_template, request, session
+from flask import Flask, Response, render_template, request, send_file, session
 import os
 from werkzeug.utils import secure_filename
+from static.SafetyOfWOrkersFinal.SafetyOfWorkers.yolo import predicted_output
+import cv2
  
 #*** Backend operation
 
 # WSGI Application
 # Defining upload folder path
-UPLOAD_FOLDER = os.path.join('static', 'uploads')
+UPLOAD_FOLDER = os.path.join('static', 'uploads','sample.jpg')
 # # Define allowed files
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
  
@@ -67,21 +69,33 @@ def upload():
         print(f'Permissions changed')
 
         # Upload file to database (defined uploaded folder in static path)
-        # with open(UPLOAD_FOLDER, 'w+'):
-        uploaded_img.save(os.path.join(app.config['UPLOAD_FOLDER']), img_filename)
+        # with open(app.config['UPLOAD_FOLDER'], 'w+'):
+        # uploaded_img.save(os.path.join(app.config['UPLOAD_FOLDER']), img_filename)
+        
         # print(os.path.join(app.config['UPLOAD_FOLDER'], img_filename))
         
         # Storing uploaded file path in flask session
-        session['uploaded_img_file_path'] = os.path.join(app.config['UPLOAD_FOLDER'], img_filename)
+        session['uploaded_img_file_path'] = os.path.join(app.config['UPLOAD_FOLDER'], 'sample.jpg')
+        # = os.path.join(app.config['UPLOAD_FOLDER'], img_filename)
 
     return render_template('SafetytemplateFiles/index_upload_and_show_data_page2.html')
      
 @app.route('/show_image')
 def displayImage():
     # Retrieving uploaded file path from session
-    img_file_path = session.get('uploaded_img_file_path', None)
-    # Display image in Flask application web page
-    return render_template('SafetytemplateFiles/show_image.html', user_image = img_file_path)
- 
+    # img_file_path = session.get('uploaded_img_file_path', None)
+    img_file_path = 'C:/Users/SUKHMANI KAUR/Desktop/Projects/SIH/updated-constructionmanagement-backend/construction-management/static/SafetyOfWOrkersFinal/SafetyOfWorkers/sample.jpg'
+    # # Display image in Flask application web page
+    # return render_template('SafetytemplateFiles/show_image.html', user_image = predicted_output(img_file_path))
+    # # return render_template('SafetytemplateFiles/show_image.html', user_image = img_file_path)
+    # processed_image = predicted_output(img_file_path)
+    #   # Convert the processed image to bytes
+    # _, buffer = cv2.imencode('.jpg', processed_image)
+    # image_bytes = buffer.tobytes()
+    # print(processed_image)
+    # Return the processed image as a response
+    user_image = 'C:/Users/SUKHMANI KAUR/Desktop/Projects/SIH/updated-constructionmanagement-backend/construction-management/static/runs/detect/predict/sample.jpg'
+    return render_template('SafetytemplateFiles/show_image.html')
+
 if __name__=='__main__':
     app.run(host='0.0.0.0', port=5001, debug = True)
