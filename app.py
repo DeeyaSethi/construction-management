@@ -40,6 +40,22 @@ def index():
 def progress():
     return render_template('TrackProgress/progress.html')
 
+@app.route('/Your_Projects/progress.html')
+def progressProject():
+    return render_template('Your_Projects/progress.html')
+
+@app.route('/Your_Projects/yourprojects.html')
+def project():
+    return render_template('Your_Projects/yourprojects.html')
+
+@app.route('/Your_Projects/inventory_file.html')
+def projectsInventory():
+    return render_template('Your_Projects/inventory_file.html')
+
+@app.route('/Your_Projects/index_upload_and_show_data.html')
+def projectsSafety():
+    return render_template('Your_Projects/index_upload_and_show_data.html')
+
 @app.route('/InventoryMgmt/inventory_file.html')
 def inventory():
     return render_template('InventoryMgmt/inventory_file.html')

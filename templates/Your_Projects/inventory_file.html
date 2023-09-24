@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Inventory Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inventory_style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js for the pie chart -->
+</head>
+<body>
+    <header>
+        <h1>Real-Time Inventory Management System</h1>
+    </header>
+    <main>
+        <section class="two-column-container">
+            <section class="left-column">
+                <section class="inventory-list">
+                    <h2>Inventory List</h2>
+                    <table id="inventory-table">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total Value</th>
+                                <th>Purchase Date</th>
+                                <th>Exhaustion Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Inventory data will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section class="right-column">
+                <section class="inventory-chart">
+                    <h2 style="margin-top: 20px;" >Inventory Composition</h2>
+                    <canvas id="inventory-pie-chart"></canvas>
+                </section>
+            </section>
+        </section>
+        <section style="margin: 20px;" class="button-container">
+            <button id="add-product-button" class="center">Add to Inventory</button>
+            <button id="view-inventory-button" class="center">View Inventory Records</button>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/Inventory.js') }}"></script>
+</body>
+</html>

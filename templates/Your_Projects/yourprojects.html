@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongoing Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+            text-align: center; /* Center align content */
+        }
+
+        h1, h2 {
+            color: #000; /* Black header text */
+        }
+
+        .filters select {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+            display: inline-block; /* Display cards side by side */
+            text-align: left; /* Left align text */
+        }
+
+        .project-card button {
+            background-color: #2ecc71; /* Green button */
+            color: #fff; /* White text */
+            border: none;
+            padding: 5px 10px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .project-card button:hover {
+            background-color: #218f63; /* Darker green background on hover */
+        }
+
+        /* Adjusted color for gov and contractor options */
+        .filters select[name="gov-contractor"] {
+            color: #000; /* Black text */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ongoing Projects</h1>
+    <div class="filters">
+        <label for="location">Location:</label>
+        <select name="location" id="location">
+            <option value="all">All</option>
+            <!-- Add more location options as needed -->
+        </select>
+
+        <label for="gov-contractor">Gov/Contractor:</label>
+        <select name="gov-contractor" id="gov-contractor">
+            <option value="all">All</option>
+            <option value="gov">Government</option>
+            <option value="contractor">Contractor</option>
+        </select>
+    </div>
+
+    <div class="project-card">
+        <h2>Project A</h2>
+        <p>Location: City X</p>
+        <p>Status: In Progress</p>
+        <a href="./progress.html">
+        <button>Track Progress</button>
+        </a>
+        <a href="./inventory_file.html">
+        <button>Inventory Management</button>
+        </a>
+        <a href="./index_upload_and_show_data.html">
+        <button>Safety of Workers</button>
+        </a>
+    </div>
+
+    <div class="project-card">
+        <h2>Project B</h2>
+        <p>Location: City Y</p>
+        <p>Status: Completed</p>
+        <button>Track Progress</button>
+        <button>Inventory Management</button>
+        <button>Safety of Workers</button>
+    </div>
+
+    <div class="project-card">
+        <h2>Project C</h2>
+        <p>Location: City Z</p>
+        <p>Status: In Progress</p>
+        <button>Track Progress</button>
+        <button>Inventory Management</button>
+        <button>Safety of Workers</button>
+    </div>
+
+    <div class="project-card">
+        <h2>Project D</h2>
+        <p>Location: City W</p>
+        <p>Status: In Progress</p>
+        <button>Track Progress</button>
+        <button>Inventory Management</button>
+        <button>Safety of Workers</button>
+    </div>
+    <div class="project-card">
+        <h2>Project E</h2>
+        <p>Location: City W</p>
+        <p>Status: In Progress</p>
+        <button>Track Progress</button>
+        <button>Inventory Management</button>
+        <button>Safety of Workers</button>
+    </div>
+
+    <div class="project-card">
+        <h2>Project F</h2>
+        <p>Location: City V</p>
+        <p>Status: Completed</p>
+        <button>Track Progress</button>
+        <button>Inventory Management</button>
+        <button>Safety of Workers</button>
+    </div>
+
+    <!-- Add more project cards as needed -->
+</body>
+
+</html>
+
