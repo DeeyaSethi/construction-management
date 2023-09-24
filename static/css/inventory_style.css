@@ -1,0 +1,83 @@
+@import url(./AnimationStyle.css);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00D09C ;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Center-align the buttons using flexbox */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Add center class to center-align buttons */
+.center {
+    text-align: center;
+}
+
+/* Apply flexbox to divide the main content into two columns */
+.two-column-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+/* Adjust the width of left and right columns as needed */
+.left-column {
+    flex: 1; /* Left column takes 50% width */
+    padding-right: 20px; /* Add spacing between columns */
+}
+
+.right-column {
+    flex: 1; /* Right column takes 50% width */
+}
+
+
+

@@ -1,0 +1,222 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+  background-color: #f4f4f4;
+  color: #333; /* Black text color */
+}
+
+
+/* Style the header */
+header {
+  background-color: #00d09c;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style the title in the header */
+header h1 {
+  font-size: 36px;
+  color: white;
+}
+
+/* Style the main content area */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this CSS to your styles.css file */
+
+/* Style the countdown timer container */
+.countdown {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Style the individual time units (days, hours, minutes, seconds) */
+.countdown span {
+  font-size: 28px;
+  color: #00D09C; /* Your preferred color */
+  margin: 0 10px;
+}
+
+/* Style the countdown labels (days, hours, minutes, seconds) */
+.countdown span::after {
+  content: ":";
+  margin-left: 5px;
+  color: #000; /* Black color for labels */
+}
+
+/* Style the "Project Completed" message */
+#countdown-timer {
+  font-size: 24px;
+  color: #00D09C; /* Your preferred color */
+}
+
+/* Add animation for a subtle countdown effect */
+@keyframes countdown-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.countdown span {
+  animation: countdown-animation 1s infinite;
+}
+
+
+/* Style the project overview section */
+.project-details h2 {
+  color: #00d09c;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.project-details p {
+  color: #333;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Style the project details list */
+.project-details ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project-details li {
+  color: #555; /* Dark gray text color */
+  margin-bottom: 5px;
+}
+
+/* Progress bar */
+.progress-bar {
+    height: 20px;
+    
+    background-color: #ccc; /* Change to your preferred color */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 50%; /* Initial fill level, you can adjust this as needed */
+    background-color: #FFF; /* Fill color, you can change this too */
+    border-radius: 8px;
+    text-align: right;
+    line-height: 20px;
+    color: #000; /* Text color, you can change this too */
+}
+
+
+/* Style the progress bars */
+.progress-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.phase {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+/* Style the legend for progress phases */
+.legend {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: inline-block;
+  margin-right: 20px;
+  color: #333;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Define colors for progress phases */
+.planning {
+  background-color: #ffdd94;
+}
+.construction {
+  background-color: #00d09c;
+}
+.testing {
+  background-color: #ffaa67;
+}
+.completion {
+  background-color: #99d98c;
+}
+
+.alert-box {
+    background-color: #FF4D4D; /* Red background color */
+    color: #FFF; /* White text color */
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.alert-icon {
+    background-color: #FFF;
+    color: #FF4D4D;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.alert-text {
+    flex-grow: 1;
+}
+
+.alert-action-button {
+    background-color: #FFF;
+    color: #FF4D4D;
+    border: 2px solid #FF4D4D;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.alert-action-button:hover {
+    background-color: #FF4D4D;
+    color: #FFF;
+    cursor: pointer;
+}
+
