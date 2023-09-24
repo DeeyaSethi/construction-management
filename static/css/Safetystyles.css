@@ -1,64 +1,74 @@
- body {
-    /* background: linear-gradient(45deg, #00d09c, #06a690, #00d09c, #06a690); */
-    background-color: #f1d38b;
-    background-size: 400% 400%;
-    color: #b05d1a;
-    font-family: Arial, sans-serif;
-    margin: 0;
+/* Reset default margin and padding on elements */
+body, h1, p, form {
+    margin-top: 30px;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    animation: fadeIn 1s ease-in-out; /* Add fadeIn animation */
-    animation-fill-mode: forwards;
-    animation-delay: 0.3s; /* Delay to start animation after page load */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.container {
+/* Style the body background and text */
+body {
+    background-color: #f0f0f0;
     text-align: center;
-}
-
-h1 {
     padding: 20px;
-    font-size: 28px;
 }
 
-.upload-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+/* Style the header */
+h1 {
+    font-size: 30px;
+    color: #363333;
+    margin-bottom: 10px;
 }
 
-#uploadButton {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Add button hover animation */
+/* Style the paragraph */
+p {
+    font-size: 16px;
+    color: black;
+    /* text-align: left; */
+    margin-left:-100px; 
+    margin-bottom: 20px;
 }
 
-#uploadButton:hover {
-    background-color: #555;
-}
-
-#imageInput {
-    display: none;
-}
-
-#result {
+/* Style the file input and submit button */
+form {
+    margin: 20px auto;
+    width: 300px;
     text-align: center;
+}
+
+input[type="file"] {
+    display: block; /* Show the file input as a block element */
+}
+
+label {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style the success message */
+p.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* Style the Display Image button */
+form.display-image-form {
     margin-top: 20px;
-    font-size: 18px;
+}
+
+form.display-image-form input[type="submit"] {
+    background-color: #3498db;
 }

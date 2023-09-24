@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href='{{url_for('static', filename='/css/Safetystyles.css') }}' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   </head>
     <h1>Upload and display image</h1>
-    <p>Show image</p>
+    <p style = "margin-left: -200px;">Show image</p>
  
     <form method="POST" enctype="multipart/form-data" action="/">
         <input type="file" id="myFile" name="uploaded-file" accept=".jpg">
         <input type="submit" value="Submit">
     </form>
   <br>
-  <p style="color:green;">File uploaded successfully</p>
+  <p>File uploaded successfully</p>
   <form action="/show_image" target="_blank">
         <input type="submit" value="Display Image" />
     </form>

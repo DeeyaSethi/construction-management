@@ -56,29 +56,29 @@ Groww_LoginRegisterClick.addEventListener("click",()=>{
     LoginBodyLeftBottom.appendChild(LoginBodyLeftBottomText);
     
     //Right side of login page
-    let LoginBodyRight = document.createElement("div");
-    LoginBodyRight.classList.add("LoginBodyRight");
-    LoginBody.appendChild(LoginBodyRight);
+    // let LoginBodyRight = document.createElement("div");
+    // LoginBodyRight.classList.add("LoginBodyRight");
+    // LoginBody.appendChild(LoginBodyRight);
     
-    //right side of login page Heading
-    let LoginBodyRighth1 = document.createElement("h2");
-    LoginBodyRighth1.classList.add("LoginBodyRighth1");
-    LoginBodyRighth1.textContent = "Welcome To Groww";
-    LoginBodyRight.appendChild(LoginBodyRighth1);
+    // //right side of login page Heading
+    // let LoginBodyRighth1 = document.createElement("h2");
+    // LoginBodyRighth1.classList.add("LoginBodyRighth1");
+    // LoginBodyRighth1.textContent = "Welcome To Groww";
+    // LoginBodyRight.appendChild(LoginBodyRighth1);
 
     // Right Side login page Google login
-    let LoginBodyRightGoogleConTainer = document.createElement("div");
-    LoginBodyRightGoogleConTainer.classList.add("LoginBodyRightGoogleConTainer");
-    LoginBodyRight.appendChild(LoginBodyRightGoogleConTainer);
+    // let LoginBodyRightGoogleConTainer = document.createElement("div");
+    // LoginBodyRightGoogleConTainer.classList.add("LoginBodyRightGoogleConTainer");
+    // LoginBodyRight.appendChild(LoginBodyRightGoogleConTainer);
 
-    let LoginBodyRightGoogleConTainerImg = document.createElement("div");
-    LoginBodyRightGoogleConTainerImg.classList.add("LoginBodyRightGoogleConTainerImg");
-    LoginBodyRightGoogleConTainer.appendChild(LoginBodyRightGoogleConTainerImg);
+    // let LoginBodyRightGoogleConTainerImg = document.createElement("div");
+    // LoginBodyRightGoogleConTainerImg.classList.add("LoginBodyRightGoogleConTainerImg");
+    // LoginBodyRightGoogleConTainer.appendChild(LoginBodyRightGoogleConTainerImg);
 
-    let LoginBodyRightGoogleConTainerText = document.createElement("div");
-    LoginBodyRightGoogleConTainerText.classList.add("LoginBodyRightGoogleConTainerText");
-    LoginBodyRightGoogleConTainerText.textContent = "Continue with Google"
-    LoginBodyRightGoogleConTainer.appendChild(LoginBodyRightGoogleConTainerText);
+    // let LoginBodyRightGoogleConTainerText = document.createElement("div");
+    // LoginBodyRightGoogleConTainerText.classList.add("LoginBodyRightGoogleConTainerText");
+    // LoginBodyRightGoogleConTainerText.textContent = "Continue with Google"
+    // LoginBodyRightGoogleConTainer.appendChild(LoginBodyRightGoogleConTainerText);
 
         // horizonal line and text or 
     let MainLinesection = document.createElement("div");

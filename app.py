@@ -35,9 +35,17 @@ def index():
 def progress():
     return render_template('TrackProgress/progress.html')
 
+@app.route('/InventoryMgmt/inventory_file.html')
+def inventory():
+    return render_template('InventoryMgmt/inventory_file.html')
+
 @app.route('/ReportCorruption/rc.html')
 def reportCorruption():
     return render_template('ReportCorruption/rc.html')
+
+# @app.route('/InventoryMgmt/inventory_file.html')
+# def progress():
+#     return render_template('InventoryMgmt/inventory_file.html')
 
 @app.route('/SafetyOfWOrkersFinal/templateFiles/index_upload_and_show_data.html')
 def uploadFile():

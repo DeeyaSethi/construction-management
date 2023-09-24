@@ -23,8 +23,8 @@
   <body id="IndexBody">
     <div class="Groww_Top">
       <div class="Groww_logo">
-        <img src="nirmanlogo.png" width="203px" height="80px" />
-      </div>
+        <img alt="" src="nirmanlogo.png" height="80px" />
+    </div>
 
       <div class="Groww_searchContainer">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -32,6 +32,7 @@
       </div>
 
       <div class="Groww_LoginRegister">
+      <a href = "/NewLogin/loginPage.html"></a>
         <button>Login/Register</button>
       </div>
     </div>
@@ -55,13 +56,15 @@
         </div>
 
         <div class="Groww_Started_Container">
-          <button class="Goww_StartedButton">Get Started</button>
+          <a href = "./TrackProgress/progress.html">
+          <button class="Goww_StartedButton">Your Projects</button>
+        </a>
         </div>
       </div>
 
       <div class="Grow_Middle_Right">
         <div class="Grow_middle_col2">
-          <a class="inventoryManagement" href="#">
+          <a class="inventoryManagement" href="./InventoryMgmt/inventory_file.html">
             <img
               src="{{url_for('static', filename='images/ImageIcon/logos construction/inventory management.png') }}"
               width="69px"
@@ -114,12 +117,10 @@
             />
             <h3>Fixed Deposit</h3>
           </a>
-        </div> -->
+        </div> 
       </div>
     </div>
 
-    <!--Our Product-->
-    <div class="GrowwProduct">
       <div class="OurProduct_Text">OUR PRODUCTS</div>
       <h2 class="yourMoneyYourChoice_Text">Your Money. Your Choice.</h2>
 
@@ -255,7 +256,7 @@
       </div>
     </div>
 
-    <!--Trusted By Container-->
+    Trusted By Container
     <div class="Groww_TrustedByContainer">
       <div class="Groww_TrustedBackgroundImage">
         <div class="GrowwTrusted_Left">
@@ -271,9 +272,8 @@
         <div class="GrowwTrusted_right"></div>
       </div>
     </div>
-    <!--Will be add after-->
+    Will be add after
 
-    <!--Keep Learning Keep Growing-->
 
     <div class="GrowwLearningSection">
       <h2 class="GrowwLearning_Heading">Keep learning. Keep growing.</h2>
@@ -313,7 +313,6 @@
       </div>
     </div>
 
-    <!--In The Press-->
     <div class="GrowwInPressSection">
       <div class="GrowwInPressSection_Heading">
         <hr />
@@ -328,7 +327,6 @@
       </div>
     </div>
 
-    <!--Creating proud investors-->
     <div class="GrowwInvestor">
       <div class="GrowwInvestor_top">
         <div class="headingandDetails">
@@ -485,7 +483,6 @@
       </div>
     </div>
 
-    <!--Support Section-->
     <div class="SupportSection">
       <div class="SupportContainer">
         <div class="SupportSection_left">
@@ -506,8 +503,6 @@
         </div>
       </div>
     </div>
-
-    <!--Footer Section-->
     <div class="FooterSection">
       <div class="row">
         <div class="GrowwCompanyDetails">
@@ -519,8 +514,6 @@
           <p class="FooterSection_Address1">No.11, 2nd floor, 80 FT Road</p>
           <p class="FooterSection_Address2">4th Block, S.T Bed, Koramangala</p>
           <p class="FooterSection_Address3">Bengaluru – 560034</p>
-
-          <!--using the image available on the -->
           <div class="FooterSection_ContactSocialMedia">
             <div class="ContactUs">Contact Us</div>
             <a href="#" class="SocialMedia_icon"
@@ -587,7 +580,7 @@
           /></a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- <script src="Javascript.js"></script> -->
     <script src="{{ url_for('static', filename='js/Javascript.js') }}"></script>
