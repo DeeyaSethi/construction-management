@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Construction Streamline</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
     <!-- <link rel="stylesheet" href="construction-management/static/css/style.css" /> -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/hoverEffect.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/hoverEffect.css') }}" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -17,13 +17,13 @@
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='css/LoginAndRegisterStyle.css') }}"
+      href="{{ url_for('static', filename='/css/LoginAndRegisterStyle.css') }}"
     />
   </head>
   <body id="IndexBody">
     <div class="Groww_Top">
       <div class="Groww_logo">
-        <img alt="" src="nirmanlogo.png" height="80px" />
+        <img alt="" src="{{ url_for('static', filename='/images/nirmanlogo.png') }}" height="80px" />
     </div>
 
       <div class="Groww_searchContainer">
@@ -32,7 +32,7 @@
       </div>
 
       <div class="Groww_LoginRegister">
-      <a href = "/NewLogin/loginPage.html"></a>
+      <a href = "./NewLogin/loginPage.html"></a>
         <button>Login/Register</button>
       </div>
     </div>
@@ -583,10 +583,10 @@
     </div> -->
 
     <!-- <script src="Javascript.js"></script> -->
-    <script src="{{ url_for('static', filename='js/Javascript.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/loginAndRegister.js') }}"></script>
+    <script src="{{ url_for('static', filename='/js/Javascript.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='/js/loginAndRegister.js') }}"></script> -->
     <script>
-      {{ url_for('static', filename='js/ProgressScript.js') }}
+      {{ url_for('static', filename='/js/ProgressScript.js') }}
     </script>
   </body>
 </html>

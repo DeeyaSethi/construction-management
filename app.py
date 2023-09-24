@@ -32,6 +32,9 @@ app.secret_key = secrets.token_hex(16)
 def index():
     return render_template('Index.html')
     # return render_template('index_upload_and_show_data.html')
+# @app.route('/NewLogin/loginPage.html')
+# def login():
+#     return render_template('/NewLogin/loginPage.html')
 
 @app.route('/TrackProgress/progress.html')
 def progress():
@@ -44,10 +47,6 @@ def inventory():
 @app.route('/ReportCorruption/rc.html')
 def reportCorruption():
     return render_template('ReportCorruption/rc.html')
-
-# @app.route('/InventoryMgmt/inventory_file.html')
-# def progress():
-#     return render_template('InventoryMgmt/inventory_file.html')
 
 @app.route('/SafetyOfWOrkersFinal/templateFiles/index_upload_and_show_data.html')
 def uploadFile():
